@@ -1,0 +1,300 @@
+:root {
+    --blue1: #00888d;
+    --gray1: #CCC;
+    --gray2: #555;
+}
+
+body {
+    background-color: #FFF;
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+header {
+    background-color: white;
+    display: flex;
+    place-content: space-between;
+    place-items: center;
+    padding: 3px 80px 3px 80px;
+}
+
+header #nav-button {
+    width: 50%;
+}
+
+header #logo {
+    display: flex;
+    place-content: center;
+    place-items: center;
+}
+
+#logo img {
+    height: 40px;
+    aspect-ratio: 1;
+    fill: #00888d;
+}
+
+header #logo div {
+    width: 1.5rem;
+    aspect-ratio: 1;
+    background-color: rebeccapurple;
+}
+
+header #logo span {
+    color: var(--blue1);
+    font-weight: bold;
+}
+
+header ul {
+    display: flex;
+    place-content: center;
+    place-items: center;
+    gap: 1rem;
+    /* background-color: red; */
+    width: 15rem;
+}
+
+header ul li {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #555;
+    padding: 5px;
+}
+
+header ul .border-bottom {
+    width: 0;
+    height: 3px;
+    background-color: #a70000;
+    transition: width 500ms;
+}
+
+header ul li:hover .border-bottom {
+    width: 100%;
+}
+
+
+#search-section {
+    display: flex;
+    place-content: center;
+    place-items: center;
+    background-image: url(./images/pexels-arthousestudio-4534200.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 15rem;
+}
+
+#search-section img {
+    width: 50px;
+    height: 20px;
+    padding: 10px;
+    background-color: var(--blue1);
+}
+
+#search-section input {
+    font-size: 1rem;
+    color: var(--blue1);
+    padding: 7px 5px;
+    width: 20rem;
+}
+
+#search-section #icon {
+    background-color: var(--blue1);
+    width: 80px;
+    height: 35px;
+}
+
+main {
+    padding: 2rem 4rem;
+    color: var(--blue1);
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    /* width: ; */
+}
+
+main #A {
+    display: flex;
+    place-content: space-between;
+    place-items: center;
+    padding: 0 5rem;
+}
+
+main #A #page-number {
+    background-color: var(--gray1);
+    padding: 5px 15px;
+}
+
+main #images-container-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    place-content: center;
+    place-items: center;
+    /* gap: 1rem; */
+}
+
+main #images-container-section .img-container {
+    display: flex;
+    flex-direction: column;
+}
+
+main #images-container-section .img-info {
+    display: flex;
+    place-content: space-between;
+    place-items: center;
+}
+
+main #images-container-section .img-container img {
+    height: 8rem;
+    width: 12rem;
+    transition: transform 500ms;
+    cursor: pointer;
+}
+
+main #images-container-section .img-container img:hover {
+    transform: scale(1.08);
+}
+
+main #control-section {
+    display: flex;
+    place-content: center;
+    place-items: center;
+    gap: 25%;
+}
+
+main #control-section button {
+    background-color: var(--blue1);
+    color: white;
+    border: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    transition: transform 500ms;
+}
+
+main #control-section button:hover {
+    transform: scale(1.1);
+}
+
+main #control-section #dots-container {
+    display: flex;
+    place-content: center;
+    place-items: center;
+    gap: 1rem;
+}
+
+main #control-section #dots-container .dot {
+    padding: 1rem;
+    font-weight: bold;
+    background-color: var(--gray1);
+    color: #555;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main #control-section #dots-container .dot:hover {
+    filter: brightness(110%);
+}
+
+main #control-section #dots-container .active-dot {
+    background-color: var(--blue1);
+    color: white;
+}
+
+footer {
+    background-color: var(--gray1);
+    padding: 2rem 18rem;
+    display: flex;
+    place-content: start;
+    place-items: start;
+    gap: 5rem;
+    color: var(--gray2);
+}
+
+footer section {
+    width: 25rem;
+    height: 14rem;
+}
+
+footer section h2 {
+    color: var(--blue1);
+}
+
+footer #links-container {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    place-items: start;
+}
+
+footer #links-container a {
+    text-decoration: none;
+    color: var(--gray2);
+}
+
+footer section:last-child {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
+    gap: 1rem;
+    width: 8rem;
+}
+
+footer #contacts-items-container {
+    display: flex;
+    place-content: center;
+    place-items: center;
+    gap: 1rem;
+}
+
+footer #contacts-items-container div {
+    background-color: #FFF;
+    width: 2rem;
+    aspect-ratio: 1;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 500ms;
+
+    background-position: center;
+    background-size: cover;
+
+}
+
+#facebook-icon {
+    background-image: url(./icons/facebook-svgrepo-com.svg);
+    fill: var(--gray2);
+}
+
+#twitter-icon {
+    background-image: url(./icons/twitter-3-svgrepo-com.svg);
+}
+
+#gmail-icon {
+    background-image: url(./icons/icons8-gmail-ios-17-filled-96.png);
+}
+
+#pinterest-icon {
+    background-image: url(./icons/pinterest-circular-logo-symbol-svgrepo-com.svg);
+}
+
+footer #contacts-items-container div:hover {
+    transform: scale(1.1);
+}
+
+#B {
+    place-self: end;
+}
